@@ -8,7 +8,7 @@ const queryBlockchain = async()=>{
 }
 
 // checking the balance of the address in BigNumber
-const balance = await provider.getBalance("0xc0F053C1D763Fe2156E51E5b243be75cf3FE87AB");
+const balance = await provider.getBalance("0xc0F053C1D763Fe2156E51E5b243be75cf3FE87AB ");
 console.log("balance of the address : ",balance );
 
 // in Ether balance
