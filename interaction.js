@@ -119,10 +119,12 @@ const contractInteraction= async()=>{
     console.log(num);
 
     const contractBalance = await walletContract.contractBalance();
-    console.log(contractBalance);
+    const balancetoether = ethers.utils.formatEther(contractBalance);
+    console.log("Contract balance :",balancetoether);
 
     const userBalance = await walletContract.accountBalance("0xc0F053C1D763Fe2156E51E5b243be75cf3FE87AB");
-    console.log(userBalance);
+    const userbalncetoether = ethers.utils.formatEther(userBalance)
+    console.log("User Balance : ",userbalncetoether);
 }
 
 contractInteraction();
