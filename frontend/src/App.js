@@ -13,7 +13,7 @@ function App() {
       await provider.send("eth_requestAccounts", []);
       const signer = provider.getSigner();
       const contract = new ethers.Contract(contractAddress, abijson, signer);
-      await contract.setValue(2);
+      await contract.setValue(5);
     };
     writeContract();
   }, []);
